@@ -746,7 +746,7 @@ ErrorX:
                 SMTP.EnableSsl = True
                 SMTP.Port = "587"
                 SMTP.Host = "smtp.gmail.com"
-        SMTP.Credentials = New Net.NetworkCredential(base64Decode("Email: I did remove it, you can put it here in base64 format."), base64Decode("Password: I did remove it, you can put it here in base64 format.")) 'my Credentials, dummy sender.
+                SMTP.Credentials = New Net.NetworkCredential(base64Decode("Email: I did remove it, you can put it here in base64 format."), base64Decode("Password: I did remove it, you can put it here in base64 format.")) 'my Credentials, dummy sender.
                 SMTP.Send(mail)
             End Using
         End Using
